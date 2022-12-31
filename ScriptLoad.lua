@@ -578,11 +578,15 @@ local listPre = {
 	
 	--Collect All Pets
 	[3359505957]="loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HohoV2/Pre/CollectAllPetsPre.lua', true))()",
+
+        --Door's
+        [6839171747]="loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()",
+
 }
 
 MakePrGui()
 CreateSupportList({"Blox Fruit","King Legacy","Ro Fruit","Collect All Pets","Tower of Hell","Break In","Arsenal",
-	"Pet Simulator X","Mad City","Viet Nam Piece","Field Trip Z","Giant Survival!",
+	"Pet Simulator X","Mad City","Viet Nam Piece","Field Trip Z","Giant Survival!","Door's"
 	"Murder Mystery 2","steve's one piece","Anime Fighters Simulator","Tradelands","Dungeon Quest","Two Piece"
 })
 
@@ -592,5 +596,5 @@ if getgenv().Key and listPre[game.GameId] ~= nil then
 elseif not getgenv().Key and list[game.GameId] ~= nil then
 	loadstring(list[tonumber(game.GameId)])()
 else
-	game.Players.LocalPlayer:Kick("game not support, discord.gg/hohohub")
+	game.Players.LocalPlayer:Kick("game not supported join pet sim x to see the supported games")
 end
