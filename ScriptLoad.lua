@@ -341,6 +341,12 @@ function CreateSupportList(list_game)
 					k = k + add
 					wait()
 				end
+                                k = 1
+				while k <= 255 do
+					text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+					k = k + add
+					wait()
+				end
 				while k <= 255 do
 					text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
 					k = k + add
@@ -513,6 +519,10 @@ local list = {
 
 	--Collect All Pets
 	[3359505957]="loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HohoV2/Free/CollectAllPetsFree.lua', true))()",
+
+        --Door's
+        [6839171747]="loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()",
+
 }
 
 local listPre = {
@@ -579,9 +589,6 @@ local listPre = {
 	--Collect All Pets
 	[3359505957]="loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HohoV2/Pre/CollectAllPetsPre.lua', true))()",
 
-        --Door's
-        [6839171747]="loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()",
-
 }
 
 MakePrGui()
@@ -596,5 +603,5 @@ if getgenv().Key and listPre[game.GameId] ~= nil then
 elseif not getgenv().Key and list[game.GameId] ~= nil then
 	loadstring(list[tonumber(game.GameId)])()
 else
-	game.Players.LocalPlayer:Kick("game not supported join pet sim x to see the supported games")
+	game.Players.LocalPlayer:Kick("game not supported .gg/62HTvwvzF7")
 end
