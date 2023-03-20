@@ -603,5 +603,5 @@ if getgenv().Key and listPre[game.GameId] ~= nil then
 elseif not getgenv().Key and list[game.GameId] ~= nil then
 	loadstring(list[tonumber(game.GameId)])()
 else
-	game.Players.LocalPlayer:Kick("game not supported .gg/62HTvwvzF7")
+	game.Players.LocalPlayer:Kick("game not supported, discord.gg/hohohub")
 end
